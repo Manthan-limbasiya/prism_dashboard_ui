@@ -1,0 +1,345 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app {
+  display: flex;
+  background-color: #f6f6f6;
+}
+.content {
+  width: 100%;
+}
+.main-content {
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 46px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #202020;
+}
+.add_btn {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 98px;
+  height: 17px;
+  margin-top: 6px;
+  button {
+    height: 40px;
+    width: 130px;
+  }
+}
+.sideview {
+  display: flex;
+}
+.gridBtn {
+  margin-right: 16px;
+  margin-top: 6px;
+  display: flex;
+  .shape1-icon {
+    border: 1px solid #e8e8e8;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 40px;
+  }
+  .shape2-icon {
+    border: 1px solid #e8e8e8;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 40px;
+  }
+  .shape2-icon span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main_menu {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 32px;
+  margin-bottom: 41px;
+  .ant-menu-item {
+    padding-left: 0px;
+  }
+  .ant-menu-overflow {
+    background-color: #f6f6f6;
+  }
+  .ant-menu-item-active,
+  .ant-menu-item-selected {
+    border: none;
+  }
+  .ant-menu-item-active,
+  .ant-menu-item-selected span {
+    color: #202020;
+  }
+  .ant-menu-light.ant-menu-horizontal > .ant-menu-item {
+    padding-right: 0;
+    margin-right: 32px;
+  }
+  .ant-menu-light.ant-menu-horizontal > .ant-menu-item::after {
+    inset-inline: 0px;
+  }
+  li span {
+    color: #84818a;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+.cards {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  .pagination-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 24px;
+    .count {
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #84818a;
+    }
+    .ant-pagination-item {
+      width: 40px;
+      height: 40px;
+      padding: 4px;
+    }
+    .ant-pagination-options-size-changer {
+      display: none;
+    }
+  }
+}
+.payroll {
+  padding: 24px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 112px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .info {
+    display: flex;
+    align-items: center;
+    .progressBar {
+      margin-right: 24px;
+    }
+  }
+  .total-info {
+    display: flex;
+    align-items: center;
+    .total-amount {
+      margin-right: 56px;
+    }
+    .deadline {
+      margin-right: 80px;
+    }
+    .Information-Paytroll {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-bottom: 8px;
+      color: #202020;
+    }
+    .amount-Paytroll {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #202020;
+    }
+  }
+  .Information {
+    .Information-title {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #202020;
+    }
+    .description {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #484848;
+      .persent {
+        color: #d8a049;
+      }
+    }
+  }
+}
+.greeting {
+  .welcome {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #202020;
+  }
+  .message {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #484848;
+  }
+}
+.time {
+  .day {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #202020;
+  }
+  .date {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #202020;
+  }
+}
+.dashboard-start {
+  padding: 24px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 112px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #1f7bf4;
+  .dashboard-info {
+    display: flex;
+    align-items: center;
+    .noteIcon {
+      margin-right: 24px;
+      width: 64px;
+      height: 64px;
+      align-content: center;
+      align-items: center;
+      background-color: #1f7bf414;
+      padding: 18px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+    }
+    .dashboard-Information {
+      .dashboard-title {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #202020;
+      }
+      .dashboard-description {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #484848;
+      }
+    }
+  }
+  .get-started-btn {
+    button {
+      height: 40px;
+      width: 111px;
+      span {
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #ffffff;
+      }
+    }
+  }
+}
